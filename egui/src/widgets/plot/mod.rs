@@ -502,6 +502,10 @@ impl PlotUi {
         *self.last_screen_transform.bounds()
     }
 
+    pub fn pot_clicked(&self) -> bool {
+        self.response.clicked()
+    }
+
     /// Returns `true` if the plot area is currently hovered.
     pub fn plot_hovered(&self) -> bool {
         self.response.hovered()
